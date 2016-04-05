@@ -234,13 +234,13 @@ object CX {
 
     //Maybe we should cut out this IO step unless Jatin is doing it
     /* write output */
-    val outf = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(outpath))))
-    dump(outf, S)
-    dump(outf, rowp)
-    dump(outf, colp)
-    outf.close()
-    val dumpMatEnd: Long = System.currentTimeMillis()
-    println("Local Compute: Matrix IO Dump Time = " + (dumpMatEnd - computeLevEnd))
+//    val outf = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(outpath))))
+//    dump(outf, S)
+//    dump(outf, rowp)
+//    dump(outf, colp)
+//    outf.close()
+//    val dumpMatEnd: Long = System.currentTimeMillis()
+//    println("Local Compute: Matrix IO Dump Time = " + (dumpMatEnd - computeLevEnd))
   }
 
   def dump(outf: DataOutputStream, v: BDV[Double]) = {
